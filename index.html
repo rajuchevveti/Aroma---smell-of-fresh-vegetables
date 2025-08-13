@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma - Fresh Vegetables Delivered</title>
+
+  <link rel="stylesheet" href="home.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="top-info-bar">
+    For more info, call: <strong>+91 6303568567</strong> | Email: <strong>info@aroma.com</strong>
+  </div>
+
+  <header class="header">
+    <div class="logo-container">
+      <img src="pictures/aroma-logo.jpg" alt="Aroma Logo" class="logo" />
+      <span class="brand-name">Aroma</span>
+    </div>
+
+    <div class="search-bar-container">
+      <select class="search-select">
+        <option value="all">All Categories</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        </select>
+      <input type="search" class="search-input" placeholder="Search fresh vegetables, fri..." />
+      <button class="search-button" aria-label="Search">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <div class="header-icons">
+      <a href="#" class="icon-link"><i class="fas fa-shopping-cart"id="cart-icon"></i></a>
+      <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li>
+        <a href="#organic">Organic</a>
+        <div class="organic-dropdown-content">
+          <div class="dropdown-row">
+            <div class="dropdown-column">
+              <h4>All Products</h4>
+              <ul>
+                <li><a href="#">Fruits & Vegetables</a></li>
+                <li><a href="#">Pulses</a></li>
+                <li><a href="#">Spices</a></li>
+                <li><a href="#">Flours</a></li>
+                <li><a href="#">Cold Pressed Oils</a></li>
+                <li><a href="#">Nuts</a></li>
+                <li><a href="#">Dairy</a></li>
+                <li><a href="#">Sugar & Jaggery</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Fruits and Vegetables</h4>
+              <ul>
+                <li><a href="#">Fruits</a></li>
+                <li><a href="#">Greens</a></li>
+                <li><a href="#">Vegetables</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Pulses</h4>
+              <ul>
+                <li><a href="#">Moong</a></li>
+                <li><a href="#">Urad</a></li>
+                <li><a href="#">Masoor</a></li>
+                <li><a href="#">Chana</a></li>
+                <li><a href="#">Kidney Beans</a></li>
+                <li><a href="#">More pulses</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Spices</h4>
+              <ul>
+                <li><a href="#">Coriander</a></li>
+                <li><a href="#">Cumin</a></li>
+                <li><a href="#">Turmeric</a></li>
+                <li><a href="#">Cardamom</a></li>
+                <li><a href="#">Cinnamon</a></li>
+                <li><a href="#">Fennel</a></li>
+                <li><a href="#">More spices</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="dropdown-row">
+            <div class="dropdown-column">
+              <h4>Flours</h4>
+              <ul>
+                <li><a href="#">Wheat</a></li>
+                <li><a href="#">Jowar</a></li>
+                <li><a href="#">Rag</a></li>
+                <li><a href="#">Bajra</a></li>
+                <li><a href="#">Barley</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Cold Pressed Oils</h4>
+              <ul>
+                <li><a href="#">Mustard</a></li>
+                <li><a href="#">Groundnut</a></li>
+                <li><a href="#">Sunflower</a></li>
+                <li><a href="#">Coconut</a></li>
+                <li><a href="#">Sesame</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Nuts</h4>
+              <ul>
+                <li><a href="#">Walnuts</a></li>
+                <li><a href="#">Cashew</a></li>
+                <li><a href="#">Almonds</a></li>
+                <li><a href="#">Raisins</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#groceries">Groceries</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Fresh Vegetables Delivered to Your Door</h1>
+      <p>Connecting you to nature with every bite</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="products-section">
+  <h2>Groceries</h2>
+  <div class="products-grid scrollable-products-grid">
+    <div class="product-card">
+      <img src="pictures/onions.jfif" alt="onions">
+      <h3>Onions</h3>
+      <p>1kg</p>
+      <span>Rs. 98.00</span>
+ <a href="javascript:void(0)" class="add-to-cart-btn">Add to cart</a>
+</div>
+    <div class="product-card">
+      <img src="pictures/potatoes.jfif" alt="potatoes">
+      <h3>Potatoes</h3>
+      <p>1kg</p>
+      <span>Rs. 82.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+    <div class="product-card">
+      <img src="pictures/tomatoes.jpg" alt="Tomatoes">
+      <h3>Tomatoes</h3>
+      <p>500g</p>
+      <span>Rs. 69.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+    <div class="product-card">
+     <img src="pictures/brinjal.jfif" alt="brinjal">
+      <h3>Brinjal</h3>
+      <p>200-300g</p>
+      <span>Rs. 50.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+    <div class="product-card">
+     <img src="pictures/cauliflower.jfif" alt="cauliflower">
+      <h3>cauliflower</h3>
+      <p>250g</p>
+      <span>Rs. 35.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+    <div class="product-card">
+     <img src="pictures/carrot.jfif" alt="carrot">
+      <h3>carrot</h3>
+      <p>250g</p>
+      <span>Rs. 40.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+    <div class="product-card">
+     <img src="pictures/Ginger.jfif" alt="Ginger">
+      <h3>Ginger</h3>
+      <p>250g</p>
+      <span>Rs. 45.00</span>
+      <a href="#" class="add-to-cart-btn">Add to cart</a>
+    </div>
+  </div>
+</section>
+
+/* footer */
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>AROMA</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">In News</a></li>
+          <li><a href="#">Green Aroma</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Affiliate</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Aroma Daily</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Aroma Wallet FAQs</a></li>
+          <li><a href="#">Aroma Wallet T&Cs</a></li>
+          <li><a href="#">Vendor Connect</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="copyright">&copy; 2024 Aroma. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".navbar ul li a");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 100;
+        const sectionId = current.getAttribute("id");
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
