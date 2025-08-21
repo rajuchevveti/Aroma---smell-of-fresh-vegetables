@@ -4,14 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aroma - Fresh Vegetables Delivered</title>
-
-  <link rel="stylesheet" href="home.css" />
-
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
   <div class="top-info-bar">
@@ -20,24 +16,22 @@
 
   <header class="header">
     <div class="logo-container">
-      <img src="pictures/aroma-logo.jpg" alt="Aroma Logo" class="logo" />
+      <img src="{{ url_for('static', filename='pictures/aroma-logo.jpg') }}" alt="Aroma Logo" class="logo" />
       <span class="brand-name">Aroma</span>
     </div>
-
     <div class="search-bar-container">
       <select class="search-select">
         <option value="all">All Categories</option>
         <option value="fruits">Fruits</option>
         <option value="vegetables">Vegetables</option>
-        </select>
+      </select>
       <input type="search" class="search-input" placeholder="Search fresh vegetables, fri..." />
       <button class="search-button" aria-label="Search">
         <i class="fas fa-search"></i>
       </button>
     </div>
-
     <div class="header-icons">
-      <a href="#" class="icon-link"><i class="fas fa-shopping-cart"id="cart-icon"></i></a>
+      <a href="#" class="icon-link"><i class="fas fa-shopping-cart" id="cart-icon"></i></a>
       <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
     </div>
   </header>
@@ -45,7 +39,7 @@
   <nav class="navbar">
     <ul>
       <li><a href="#home" class="active">Home</a></li>
-      <li>
+      <li class="dropdown-parent">
         <a href="#organic">Organic</a>
         <div class="organic-dropdown-content">
           <div class="dropdown-row">
@@ -101,7 +95,7 @@
               <ul>
                 <li><a href="#">Wheat</a></li>
                 <li><a href="#">Jowar</a></li>
-                <li><a href="#">Rag</a></li>
+                <li><a href="#">Ragi</a></li>
                 <li><a href="#">Bajra</a></li>
                 <li><a href="#">Barley</a></li>
               </ul>
@@ -128,7 +122,16 @@
           </div>
         </div>
       </li>
-      <li><a href="#groceries">Groceries</a></li>
+      <li class="dropdown-parent">
+        <a href="#groceries">Groceries</a>
+        <div class="groceries-dropdown-content">
+          <ul>
+            <li><a href="#">Rice</a></li>
+            <li><a href="#">Cooking Oil</a></li>
+            <li><a href="#">Snacks</a></li>
+          </ul>
+        </div>
+      </li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -146,49 +149,49 @@
   <h2>Groceries</h2>
   <div class="products-grid scrollable-products-grid">
     <div class="product-card">
-      <img src="pictures/onions.jfif" alt="onions">
+      <img src="{{ url_for('static', filename='pictures/onions.jfif') }}" alt="onions">
       <h3>Onions</h3>
       <p>1kg</p>
       <span>Rs. 98.00</span>
- <a href="javascript:void(0)" class="add-to-cart-btn">Add to cart</a>
-</div>
+      <a href="javascript:void(0)" class="add-to-cart-btn">Add to cart</a>
+    </div>
     <div class="product-card">
-      <img src="pictures/potatoes.jfif" alt="potatoes">
+      <img src="{{ url_for('static', filename='pictures/potatoes.jfif') }}" alt="potatoes">
       <h3>Potatoes</h3>
       <p>1kg</p>
       <span>Rs. 82.00</span>
       <a href="#" class="add-to-cart-btn">Add to cart</a>
     </div>
     <div class="product-card">
-      <img src="pictures/tomatoes.jpg" alt="Tomatoes">
+      <img src="{{ url_for('static', filename='pictures/tomatoes.jpg') }}" alt="Tomatoes">
       <h3>Tomatoes</h3>
       <p>500g</p>
       <span>Rs. 69.00</span>
       <a href="#" class="add-to-cart-btn">Add to cart</a>
     </div>
     <div class="product-card">
-     <img src="pictures/brinjal.jfif" alt="brinjal">
+      <img src="{{ url_for('static', filename='pictures/brinjal.jfif') }}" alt="brinjal">
       <h3>Brinjal</h3>
       <p>200-300g</p>
       <span>Rs. 50.00</span>
       <a href="#" class="add-to-cart-btn">Add to cart</a>
     </div>
     <div class="product-card">
-     <img src="pictures/cauliflower.jfif" alt="cauliflower">
-      <h3>cauliflower</h3>
+      <img src="{{ url_for('static', filename='pictures/cauliflower.jfif') }}" alt="cauliflower">
+      <h3>Cauliflower</h3>
       <p>250g</p>
       <span>Rs. 35.00</span>
       <a href="#" class="add-to-cart-btn">Add to cart</a>
     </div>
     <div class="product-card">
-     <img src="pictures/carrot.jfif" alt="carrot">
-      <h3>carrot</h3>
+      <img src="{{ url_for('static', filename='pictures/carrot.jfif') }}" alt="carrot">
+      <h3>Carrot</h3>
       <p>250g</p>
       <span>Rs. 40.00</span>
       <a href="#" class="add-to-cart-btn">Add to cart</a>
     </div>
     <div class="product-card">
-     <img src="pictures/Ginger.jfif" alt="Ginger">
+      <img src="{{ url_for('static', filename='pictures/Ginger.jfif') }}" alt="Ginger">
       <h3>Ginger</h3>
       <p>250g</p>
       <span>Rs. 45.00</span>
@@ -197,7 +200,6 @@
   </div>
 </section>
 
-/* footer */
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
